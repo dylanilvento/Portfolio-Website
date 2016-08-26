@@ -22,6 +22,11 @@ body {
 	height: 250px;
 }
 
+#project-specific-img-page-shockoe {
+	/*width: 250px;*/
+	height: 100px;
+}
+
 .row {
   margin-right: 0px !important;
   margin-left: 0px !important;
@@ -368,6 +373,18 @@ footer {
 	padding-bottom: 10px;
 }
 
+.project-heading-box-writing {
+	background-color: #5cc75e;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.project-heading-box-biz {
+	background-color: rgba(218, 68, 68, 1);
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
 .project-heading-topic {
 	/*padding-top: 20px;*/
 	color: #EBEBEB;
@@ -397,6 +414,32 @@ footer {
 	 background-repeat: no-repeat;
 	 background-position: center; 
 }
+
+.github-dark:hover {
+	content: url("../images/github-logo-black.png");
+}
+
+.itchio-dark:hover {
+	content: url("../images/itchio-black.png");
+}
+
+.globe-dark:hover {
+	content: url("../images/globe-icon-black.png");
+}
+
+.github-light:hover {
+	content: url("../images/github-logo-lightgray.png");
+}
+
+.itchio-light:hover {
+	content: url("../images/itchio-lightgray.png");
+}
+
+.globe-light:hover {
+	content: url("../images/globe-icon-lightgray.png");
+}
+
+
 
 #monopoly {
 	padding-top: 10px;
@@ -492,6 +535,23 @@ footer {
 		/*padding-bottom: 10px;*/
 	}
 
+	#project-specific-img-page-shockoe {
+		/*width: 250px;*/
+		height: 80px;
+	}
+
+	#facebook-embed {
+		margin-left: -10px;
+	}
+
+	#art-span{
+		color: #3387cf !important;
+	}
+
+	#writing-span{
+		color: #3387cf !important;
+	}
+	
 	
 }
 
