@@ -415,6 +415,10 @@ footer {
 	 background-position: center; 
 }
 
+.sidebar-review {
+	margin-left: 10% !important;
+}
+
 .github-dark:hover {
 	content: url("../images/github-logo-black.png");
 }
@@ -471,7 +475,7 @@ footer {
 
 #swummary-block {
 	/*background-image: url("https://static.pexels.com/photos/113850/pexels-photo-113850.jpeg");*/
-	background-image: url(../images/code-wall.jpeg);
+	background-image: url(../images/code-wall-sm.jpg);
 	background-size: cover;
 	background-repeat: repeat-x;
 
@@ -551,7 +555,21 @@ footer {
 	#writing-span{
 		color: #3387cf !important;
 	}
+
+	.sidebar-review {
+		margin-left: 5% !important;
+	}
+
+	.sidebar-review-text {
+		/*padding-top: -20px;
+		padding-bottom: -20px;*/
+		margin-top: -20px;
+		margin-bottom: -20px;
+	}
 	
+	.review-header {
+		margin-bottom: 20px !important;
+	}
 	
 }
 
