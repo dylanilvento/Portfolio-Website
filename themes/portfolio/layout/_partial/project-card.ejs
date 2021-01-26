@@ -1,0 +1,26 @@
+<div class="col-12 project-card-container">
+	<div class="project-card" style="background-image: url('/<%- page.path %><%- page.thumbnail_image %>');">
+		<div class="row">
+			<div class="col-12 col-sm-4">
+
+			</div>
+			<div class="col-12 col-sm-8">
+				<h2><a href="<%- url_for(page.path) %>"><%- page.title %></a></h2>
+				<%- partial('_partial/badges/badge-spawner') %>
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+				</p>
+				<div class="row">
+					<div class="col-lg-6 mb-3 mb-lg-0">
+						<a href="<%- url_for(page.path) %>" class="btn btn-primary">VIEW PROJECT</a>
+					</div>
+					<div class="col-lg-6">
+						<a href="<%- page.secondary_button_link %>"class="btn btn-primary"><%- page.secondary_button_text %></a>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>

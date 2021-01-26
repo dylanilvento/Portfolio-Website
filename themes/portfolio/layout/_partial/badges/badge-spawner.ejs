@@ -1,0 +1,21 @@
+<% page.tags.each(function(tag) { %>
+
+		<% if(tag.name == "dev") { %>
+			<%- partial('_partial/badges/dev-badge', {}, {cache: true}) %>
+
+		<% } else if(tag.name == "games") { %>
+			<%- partial('_partial/badges/games-badge', {}, {cache: true}) %>
+
+		<% } else if(tag.name == "content") { %>
+			<%- partial('_partial/badges/content-badge', {}, {cache: true}) %>
+
+		<% } else if(tag.name == "design") { %>
+			<%- partial('_partial/badges/design-badge', {}, {cache: true}) %>
+
+		<% } else if(tag.name == "web") { %>
+			<%- partial('_partial/badges/web-badge', {}, {cache: true}) %>
+
+		<% } %>
+
+
+<% }) %>
