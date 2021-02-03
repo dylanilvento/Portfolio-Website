@@ -1,5 +1,18 @@
 <% page.tags.each(function(tag) { %>
 
+		<% if(tag.name == "project") { %>
+			<%- partial('_partial/badges/project-badge', {}, {cache: true}) %>
+
+		<% } else if(tag.name == "prototype") { %>
+			<%- partial('_partial/badges/prototype-badge', {}, {cache: true}) %>
+
+		<% } %>
+
+
+<% }) %>
+
+<% page.tags.each(function(tag) { %>
+
 		<% if(tag.name == "games") { %>
 			<%- partial('_partial/badges/games-badge', {}, {cache: true}) %>
 

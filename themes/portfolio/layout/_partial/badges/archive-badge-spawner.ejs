@@ -1,0 +1,22 @@
+<% if(is_tag("dev")) { %>
+<!-- <%- partial('_partial/badges/dev-badge', {}, {cache: true}) %> -->
+Dev
+<% } else if(is_tag("games")) { %>
+<!-- <%- partial('_partial/badges/games-badge', {}, {cache: true}) %> -->
+Games
+<% } else if(is_tag("content")) { %>
+<!-- <%- partial('_partial/badges/content-badge', {}, {cache: true}) %> -->
+Content
+<% } else if(is_tag("design")) { %>
+<!-- <%- partial('_partial/badges/design-badge', {}, {cache: true}) %> -->
+Design
+<% } else if(is_tag("web")) { %>
+<!-- <%- partial('_partial/badges/web-badge', {}, {cache: true}) %> -->
+Web
+<% } else if(is_tag("project")) { %>
+<!-- <%- partial('_partial/badges/web-badge', {}, {cache: true}) %> -->
+Projects
+<% } else if(is_tag("prototype")) { %>
+<!-- <%- partial('_partial/badges/web-badge', {}, {cache: true}) %> -->
+Prototypes
+<% } %>

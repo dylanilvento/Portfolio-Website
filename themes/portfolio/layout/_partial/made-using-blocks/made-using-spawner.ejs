@@ -1,0 +1,3 @@
+<% for (var ii = 0; ii < page.made_using.length; ii++) { %>
+	<%- partial('_partial/made-using-blocks/made-using-' + page.made_using[ii], {}, {cache: true}) %>
+<% } %>
