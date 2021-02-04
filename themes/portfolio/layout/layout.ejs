@@ -26,15 +26,18 @@
 			</button>
 			<div class="collapse navbar-collapse justify-content-end mt-sm-2" id="navbarNavAltMarkup">
 				<div class="navbar-nav">
-					<a class="nav-link ps-3 ps-sm-0 px-lg-3" aria-current="page" href="#">DEV</a>
-					<a class="nav-link ps-3 ps-sm-0 px-lg-3" href="#">DESIGN</a>
-					<a class="nav-link ps-3 ps-sm-0 px-lg-3" href="#">MORE</a>
+					<a class="nav-link ps-3 ps-sm-0 px-lg-3" aria-current="page" href="<%- url_for('tags/project') %>">PROJECTS</a>
+					<a class="nav-link ps-3 ps-sm-0 px-lg-3" href="<%- url_for('tags/prototype') %>">PROTOTYPES</a>
+					<a class="nav-link ps-3 ps-sm-0 px-lg-3" href="#">ABOUT</a>
 					<li class="nav-link ps-3 ps-sm-0 px-lg-3" href="#">
 						<a href="https://twitter.com/dylanilvento">
 							<i class="fab fa-twitter"></i>&nbsp;&nbsp;
 						</a>
 						<a href="https://dylanilvento.itch.io/">
 							<i class="fab fa-itch-io"></i>&nbsp;&nbsp;
+						</a>
+						<a href="https://github.com/dylanilvento">
+							<i class="fab fa-github"></i>&nbsp;&nbsp;
 						</a>
 						<a href="">
 							<i class="fab fa-linkedin"></i></li>
@@ -44,5 +47,19 @@
 		</div>
 	</nav>
 	<%- body %>
+	<div class="container-fluid">		
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-2"></div>
+			<div class="col-lg-6 col-xl-4">
+				<p><a href="">Projects</a></p>
+				<p><a href="">Prototypes</a></p>
+			</div>
+			<div class="col-lg-6 col-xl-4">	
+			</div>
+			<div class="col-xl-2"></div>
+		</div>
+	</div>
 </body>
 </html>
