@@ -3,7 +3,7 @@ title: Track Trek
 subtitle: A cooperative train track-building game, where you gather resources and work with another player to help your locomotive avoid obstacles and guide it to its destination. Made for <a href="https://itch.io/jam/train-jam-2018/entries">Train Jam 2018's</a> theme of "Circuitous."
 date: 2018-03-18 12:00:00
 tags: [project, design, games]
-thumbnail_image: track-trek-screenshot.png
+thumbnail_image: track-trek-screenshot-background.png
 secondary_button_text: itch.io
 secondary_button_link: https://skatanicstudios.itch.io/track-trek
 screenshot_1: track-trek-screenshot-1.png

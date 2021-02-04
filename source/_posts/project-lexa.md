@@ -1,10 +1,9 @@
 ---
 title: Project Lexa
-date: 2020-08-22 16:14:57
+subtitle: A game prototype where you translate a pictographic language to solve puzzles.
+date: 2020-08-22 12:00:00
 tags: [prototype, dev, design, games]
 thumbnail_image: ld-43-screenshot.png
-secondary_button_text: github
-secondary_button_link: https://github.com/dylanilvento/LD43
 background_rgb: rgb(46,81,132
 made_using: [unity, illustrator]
 ---
