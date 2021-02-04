@@ -7,16 +7,22 @@
 			<div class="col-12 col-sm-8">
 				<h2><a href="<%- url_for(page.path) %>"><%- page.title %></a></h2>
 				<%- partial('_partial/badges/badge-spawner') %>
-				<p>
+				<p class="">
 					<%- page.subtitle %>
 				</p>
 				<div class="row">
-					<div class="col-lg-6 mb-3 mb-lg-0">
-						<a href="<%- url_for(page.path) %>" class="btn btn-primary">VIEW PROJECT</a>
-					</div>
-					<div class="col-lg-6">
-						<a href="<%- page.secondary_button_link %>"class="btn btn-primary"><%- page.secondary_button_text %></a>
-					</div>
+					<% if (page.secondary_button_link != null) { %>
+						<div class="col-lg-6 mb-3 mb-lg-0">
+							<a href="<%- url_for(page.path) %>" class="btn btn-primary">VIEW PROJECT</a>
+						</div>
+						<div class="col-lg-6">
+							<a href="<%- page.secondary_button_link %>"class="btn btn-primary"><%- page.secondary_button_text %></a>
+						</div>
+					<% } else { %>
+						<div class="col-12 mb-3 mb-lg-0">
+							<a href="<%- url_for(page.path) %>" class="btn btn-primary">VIEW PROJECT</a>
+						</div>
+					<% } %>
 				</div>
 
 
