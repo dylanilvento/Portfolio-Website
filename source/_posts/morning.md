@@ -1,6 +1,6 @@
 ---
 title: Morning
-subtitle: A 2D minigame collection about getting ready for work in the morning. Made for <a href="https://globalgamejam.org/2016/games">Global Game Jam 2016's</a> theme of "Ritual."
+subtitle: A 2D minigame collection about getting ready for work in the morning.
 date: 2016-01-31 12:00:00
 tags: [project, dev, design, games]
 thumbnail_image: morning-screenshot-background.png

@@ -1,6 +1,6 @@
 ---
 title: Chiroptera
-subtitle: A dual joystick shooter where each enemy you destroy adds armor to your ship, making you harder to kill but easier to hit. Made for <a href="https://globalgamejam.org/2017/games/chiroptera">Global Game Jam 2017's</a> theme of "Waves."
+subtitle: An exploration game where you control a bat flying through a dark cave, using echolocation to navigate.
 date: 2017-01-22 12:00:00
 tags: [project, dev, games]
 thumbnail_image: chiroptera-screenshot-background.png

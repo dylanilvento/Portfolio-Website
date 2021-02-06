@@ -1,6 +1,6 @@
 ---
 title: Arbeau
-subtitle: A dystopian resource management desktop simulator. Originally made for <a href="http://ludumdare.com/compo/ludum-dare-33/">Ludum Dare 33's</a> theme of "You Are the Monster," with continued development after the game jam, releasing a more robust version a year later.
+subtitle: A dystopian resource management desktop simulator.
 date: 2016-06-24 12:00:00
 tags: [project, dev, design, games]
 thumbnail_image: arbeau-screenshot-background.png
