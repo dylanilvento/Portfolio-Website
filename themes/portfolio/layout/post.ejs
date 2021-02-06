@@ -1,5 +1,9 @@
+<% if (page.portfolio_background_image != null) { %>
+<div class="portfolio-page-background" style="background-image: url('/<%- page.path %><%- page.portfolio_background_image %>');"> </div>
+<% } else { %>
 <div class="portfolio-page-background" style="background-image: url('/<%- page.path %><%- page.thumbnail_image %>');"> </div>
-<div class="portfolio-page-background-gradient" style="background: linear-gradient(to bottom, <%- page.background_rgb %>, 0) 20%, <%- page.background_rgb %>, 0.5) 30%, <%- page.background_rgb %>, 1) 45%);"></div>
+<% } %>
+<div class="portfolio-page-background-gradient" style="background: linear-gradient(to bottom, <%- page.background_rgb %>, 0) 25%, <%- page.background_rgb %>, 0.5) 40%, <%- page.background_rgb %>, 1) 50%);"></div>
 <div class="container-fluid">
 	<div class="container page-header portfolio-page-header my-4">
 		<div class="row">
@@ -28,7 +32,7 @@
 				<div class="col-lg-6 order-5 order-md-1">
 					<img src="<%- page.screenshot_1 %>" />
 					<img src="<%- page.screenshot_2 %>" />
-					<!-- <img src="<%- page.screenshot_3 %>" /> -->
+					<img src="<%- page.screenshot_3 %>" />
 				</div>
 				<div class="col-lg-6 pt-0 pt-md-4 pt-lg-0 px-lg-5 order-1 order-md-5">
 					

@@ -1,7 +1,13 @@
+<% var idName = page.title.toLowerCase(); %>
+<% idName = idName.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,""); %>
+<% idName = idName.replace(/\s/g, "-"); %>
 <div class="col-12 project-card-container">
-	<div class="project-card" style="background-image: url('/<%- page.path %><%- page.thumbnail_image %>');">
+	<div class="project-card" id="<%- idName %>" style="background-image: url('/<%- page.path %><%- page.thumbnail_image %>');">
 		<div class="row">
 			<div class="col-12 col-sm-4">
+				<div class="project-card-img-link">
+					<a href="<%- url_for(page.path) %>"></a>
+				</div>
 
 			</div>
 			<div class="col-12 col-sm-8">

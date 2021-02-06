@@ -10,9 +10,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	<%- css('./css/index') %>
 	<%- css('./css/icomoon') %>
+	<%- css('./css/slideshow') %>
 	<script src="https://kit.fontawesome.com/7db8433ebb.js" crossorigin="anonymous"></script>
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
 	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta charset="utf-8">
 </head>
 <body <% if (page.background_rgb != null) { %> style="background-color: <%- page.background_rgb %>, 1);" <% } %>>
 	<nav class="navbar navbar-expand-lg">
@@ -24,7 +26,7 @@
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<i class="fas fa-bars"></i>
 			</button>
-			<div class="collapse navbar-collapse justify-content-end mt-sm-2" id="navbarNavAltMarkup">
+			<div class="collapse navbar-collapse justify-content-end mt-4 mt-sm-2" id="navbarNavAltMarkup">
 				<div class="navbar-nav">
 					<a class="nav-link ps-3 ps-sm-0 px-lg-3" aria-current="page" href="<%- url_for('tags/project') %>">PROJECTS</a>
 					<a class="nav-link ps-3 ps-sm-0 px-lg-3" href="<%- url_for('tags/prototype') %>">PROTOTYPES</a>
@@ -49,7 +51,7 @@
 	<%- body %>
 	<div class="container-fluid">		
 	</div>
-	<div class="container">
+	<div class="container py-4" id="footer">
 		<div class="row">
 			<div class="col-xl-2"></div>
 			<div class="col-lg-6 col-xl-4">
