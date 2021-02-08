@@ -30,7 +30,11 @@
 					<%- partial('_partial/badges/portfolio-page-badge-spawner') %>
 				</div>
 				<div class="col-lg-6 order-5 order-md-1">
+					<% if (page.youtube_link != null) { %>
+					<iframe src="<%- page.youtube_link %>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<% } else { %>
 					<img src="<%- page.screenshot_1 %>" />
+					<% } %>
 					<img src="<%- page.screenshot_2 %>" />
 					<img src="<%- page.screenshot_3 %>" />
 				</div>

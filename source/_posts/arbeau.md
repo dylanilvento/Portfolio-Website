@@ -1,5 +1,6 @@
 ---
 title: Arbeau
+layout: project
 subtitle: A dystopian resource management desktop simulator.
 date: 2016-06-24 12:00:00
 tags: [project, dev, design, games]
@@ -13,6 +14,10 @@ secondary_button_link: https://ward-games.itch.io/arbeau
 background_rgb: rgb(55,151,139
 made_using: [unity, photoshop]
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet purus gravida quis blandit. Natoque penatibus et magnis dis parturient montes. Felis imperdiet proin fermentum leo vel. Leo urna molestie at elementum. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Libero id faucibus nisl tincidunt eget nullam non nisi est. Vel risus commodo viverra maecenas. Quisque egestas diam in arcu cursus euismod quis viverra nibh. Ullamcorper a lacus vestibulum sed. Rhoncus est pellentesque elit ullamcorper. Et odio pellentesque diam volutpat commodo. Urna porttitor rhoncus dolor purus non enim praesent elementum facilisis. Libero justo laoreet sit amet. Sit amet luctus venenatis lectus magna fringilla urna. Amet luctus venenatis lectus magna fringilla. Elementum nisi quis eleifend quam adipiscing vitae proin. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Massa enim nec dui nunc mattis enim ut. Sed tempus urna et pharetra pharetra massa massa ultricies.
+Originally made for [Ludum Dare 33's](http://ludumdare.com/compo/ludum-dare-33/) theme of "You Are the Monster," _Arbeau_ is a dystopian resource management desktop simulator where you play as the faceless peon in a giant corporation in the near future. With the help of your AI assistant, Arbeau, you have to manage the scarce resources of several government districts to maintain peace.
 
-Volutpat sed cras ornare arcu dui vivamus arcu. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Cursus sit amet dictum sit amet justo. Ante in nibh mauris cursus. Ut sem nulla pharetra diam. Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim. Adipiscing at in tellus integer feugiat scelerisque varius morbi. Eu nisl nunc mi ipsum. Etiam tempor orci eu lobortis. Vitae nunc sed velit dignissim sodales ut. Arcu cursus euismod quis viverra. Sodales ut eu sem integer vitae justo eget. Morbi enim nunc faucibus a pellentesque sit amet. Vitae turpis massa sed elementum.
+The game plays out over the course of several rounds. Each round, you’re tasked with supplying a certain amount of resources to several of your districts, but because resources are limited, you’ll have to decide which districts will go without, increasing unrest in that area. If the unrest in any one district gets too high, that district shuts down and you’re left to try to manage the remaining ones.
+
+While I originally collaborated with several developers on the game jam version of _Arbeau_, I continued development on this game by myself afterwards, releasing a more robust version a year later. I was the sole programmer on the project, while also helping out with the art and writing. This game is built entirely within the Unity UI system, and it was good practice for learning how to design and develop game systems.
+
+Made in collaboration with Mason Brown, Sean Harrington, and Kirby Martin.

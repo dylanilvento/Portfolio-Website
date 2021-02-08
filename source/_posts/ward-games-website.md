@@ -1,6 +1,7 @@
 ---
 title: "Ward Games Website"
-subtitle: A redesign of my game company's website, rebuilt from the ground up to showcase all of the games, podcasts, blogs, and panels we make.
+layout: project
+subtitle: A redesign of my game company's website, rebuilt from the ground up to showcase all of our great content, including games, podcasts, panels, and more.
 date: 2020-09-05 12:00:00
 tags: [project, dev, design, web]
 thumbnail_image: wardsite-screenshot-background.png
