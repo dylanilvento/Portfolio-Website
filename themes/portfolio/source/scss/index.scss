@@ -1,0 +1,1091 @@
+/* VARIABLES */
+
+$primary-pink: #ce1178;
+$dark-pink: #8F0B54;
+$secondary-teal: #25becf;
+$light-gray: #ddd;
+$dark-gray: #999;
+$off-black: #212121;
+
+html, body {
+	overflow-x: hidden;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: $off-black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 800;
+
+	a {
+		color: $off-black;
+		transition: 0.3s;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: $primary-pink;
+	}
+}
+
+.bg-pink {
+	
+	background-color: $primary-pink;
+	color: #fff;
+
+}
+
+/* NAVBAR */
+
+.navbar {
+	padding: 40px 0;
+	background-color: $primary-pink;
+
+	a {
+		color: #fff;
+		transition: 0.3s;
+	}
+
+	a:hover {
+		color: $light-gray;
+	}
+
+	i {
+		font-size: 1.75rem;
+		color: #fff;
+	}
+
+	.container {
+
+		.navbar-brand {
+			
+			i {
+				font-size: 4rem;
+				transition: 0.3s;
+			}
+
+		}
+
+		.navbar-brand:hover {
+			i {
+				color: $light-gray;
+			}
+			
+		}
+
+		.navbar-collapse {
+			.navbar-nav {
+				.nav-link {
+					font-size: 1.25rem;
+					font-weight: 600;
+					text-decoration: none;
+
+					> a {
+						text-decoration: none;
+
+						i {
+							transition: 0.3s;
+						}
+					}
+
+					> a:hover {
+						i {
+							color: $light-gray !important;
+						}
+						
+					}
+				}
+			}
+		}
+	}
+}
+
+/* PAGE HEADER */
+
+.homepage-header {
+	padding-top: 80px !important;
+	padding-bottom: 80px !important;
+
+	color: #fff;
+}
+
+.page-header {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	// z-index: 1;
+
+	p {
+		a {
+			color: #fff;
+			transition: 0.3s;
+			text-decoration: none;
+			border-bottom: solid 1px #fff;
+		}
+
+		a:hover {
+			color: $light-gray;
+			border-bottom-color: transparent;
+		}
+	}
+}
+
+
+/* BUTTON */
+
+.btn-primary {
+	color: #fff;
+	background-color: $primary-pink;
+	border: solid 3px #fff;
+	border-radius: 50rem;
+	text-transform: uppercase;
+	font-weight: 800;
+	width: 100%;
+	transition: 0.3s;
+	// font-family: 'Josefin Sans', sans-serif;
+	
+}
+
+.btn-primary:hover {
+	color: $primary-pink;
+	background-color: #fff;
+	border-color: #fff
+}
+
+.btn-primary + .btn-primary {
+	margin-top: 20px;
+}
+
+/* BADGE */
+
+.badge-primary {
+	background-color: $light-gray;
+	border: solid 3px $secondary-teal;
+	color: $secondary-teal;
+	transition: 0.3s;
+	text-decoration: none;
+	font-size: 0.8em;
+	min-width: 90px;
+	text-transform: uppercase;
+	font-weight: 800;
+	margin-top: 5px;
+	// z-index: 2;
+}
+
+.badge-primary:hover {
+	background-color: $secondary-teal;
+	color: $light-gray;
+}
+
+/* CONTENT */
+
+.content {
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	.project-card-container:nth-child(2) {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.project-card-container {
+		position: relative;
+		margin-top: 30px;
+		// margin-bottom: 30px;
+
+		.project-card::before {
+			// background: linear-gradient(to bottom, rgba(253,253,253,0) 40%, rgba(253,253,253,0.5) 65%, rgba(253,253,253,1) 95%);
+			// top: 0;
+			content: "";
+			background: linear-gradient(to right, rgba(233, 236, 239, 0) 32%, $light-gray 15%);
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			border-radius: 15px;
+			z-index: 1;
+
+		}
+
+		// .project-card-covering {
+		// 	background: linear-gradient(to right, rgba(233, 236, 239, 0) 15%, $light-gray 15%);
+		// 	position: absolute;
+		// 	width: 100%;
+		// 	height: 100%;
+		// }
+
+		
+
+		.project-card {
+			// background-position-x: -50%;
+			// background: linear-gradient(to right, rgba(233, 236, 239, 0) 15%, #e9ecef 15%);
+			background-color: $light-gray;
+			color: $off-black;
+			// height: 200px;
+			border-radius: 15px;
+			-webkit-box-shadow: 14px 5px 15px -1px rgba(0,0,0,0.7);
+			box-shadow: 14px 5px 15px -1px rgba(0,0,0,0.7);
+			padding: 20px;
+			background-size: contain;
+			background-repeat: no-repeat;
+
+
+			
+			.project-card-img-link {
+				display:inline-block;
+				width:100%;
+				height:100%;
+
+				a {
+					display:inline-block;
+					width:100%;
+					height:100%;
+				}
+			}
+
+			> .row {
+				position: relative;
+				z-index: 2;
+			}
+
+			// > div[class*=' col='], div[class*= ' col='] {
+			// 	p {
+			// 		margin-top: 10px !important;
+			// 	}
+			// }
+
+			p {
+				margin-top: 1rem;
+				min-height: 72px;
+
+				a {
+					color: $primary-pink;
+					text-decoration: none;
+					border-bottom: solid 1px $primary-pink;
+					transition: 0.3s;
+				}
+
+				a:hover {
+					color: $dark-pink;
+					border-bottom-color: transparent;
+				}
+			}
+
+			.btn-primary {
+				color: $primary-pink;
+				background-color: $light-gray;
+				border-color: $primary-pink;
+				transition: 0.3s;
+				
+			}
+
+			.btn-primary:hover {
+				background-color: $primary-pink;
+				color: $light-gray;
+			}
+
+		}
+
+		.project-card#ward-games-website {
+			background-position-x: 0;
+		}
+
+		.project-card#polyose {
+			background-position-x: -15%;
+		}
+
+		.project-card#bantam {
+			background-position-x: -35%;
+		}
+
+		.project-card#chiroptera {
+			background-position-x: -20%;
+		}
+
+		.project-card#morning {
+			background-position-x: -30%;
+		}
+
+		.project-card#project-lexa {
+			background-position-x: -15%;
+		}
+
+		.project-card#project-sunset-city {
+			background-position-x: -15%;
+		}
+
+		.project-card#ld-43 {
+			background-position-x: -24.75%;
+		}
+
+		.project-card#knight-life {
+			background-position-x: -24.75%;
+		}
+
+	}
+
+}
+
+/* PORTFOLIO PAGE */
+
+.portfolio-page-background {
+	position: absolute;
+	width: 100%;
+	height: 400px;
+	/* filter: blur(8px); */
+	background-size: cover;
+	background-position-y: center;
+	z-index: 0;
+}
+
+.portfolio-page-background-gradient {
+	position: absolute;
+	width: 100%;
+	// height: 100%;
+	height: 690px;
+	/* filter: blur(8px); */
+    // background-size: cover;
+    // background-position-y: center;
+    z-index: 1;
+}
+
+.portfolio-page-header {
+
+	> .row {
+		z-index: 2;
+
+		div[class*=' col-'], div[class^='col-'] {
+
+			z-index: 2;
+			color: #fff;
+
+		}
+	}
+
+}
+
+.portfolio-page-background::after {
+	background: -webkit-linear-gradient(bottom, transparent 0, rgba(0, 0, 0, 0) 12%, rgba(0, 0, 0, 0.2) 35%, rgba(0, 0, 0, 0.8) 123%, rgba(0, 0, 0, 0.6) 100%);
+	content: "";
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	right: 0;
+}
+
+.portfolio-page-body {
+	// height: 300px;
+	background: $light-gray;
+	z-index: 2;
+	border-radius: 15px;
+	padding: 40px;
+	-webkit-box-shadow: 14px 5px 15px -1px rgba(0,0,0,0.7);
+	box-shadow: 14px 5px 15px -1px rgba(0,0,0,0.7);
+	margin-bottom: 20px;
+
+	.btn-primary {
+		color: $primary-pink;
+		background-color: $light-gray;
+		border-color: $primary-pink;
+		transition: 0.3s;
+
+	}
+
+	.btn-primary:hover {
+		background-color: $primary-pink;
+		color: $light-gray;
+	}
+
+	.made-using-header {
+		border-bottom: 3px solid $off-black;
+		padding-bottom: 5px;
+		margin-bottom: 20px;
+
+	}
+
+	img {
+		width: 100%;
+		margin: 0 0 25px 0;
+		border-radius: 15px;
+	}
+
+	img:last-child {
+		margin-bottom: 0;
+	}
+
+	iframe {
+		width: 100%;
+		height: 342px;
+		margin: 0 0 25px 0;
+		border-radius: 15px;
+	}
+
+	p {
+		a {
+			color: $primary-pink;
+			text-decoration: none;
+			border-bottom: solid 1px $primary-pink;
+			transition: 0.3s;
+		}
+
+		a:hover {
+			color: $dark-pink;
+			border-bottom-color: transparent;
+		}
+	}
+
+	
+
+	// hr {
+	// 	border-bottom: solid 2px $off-black;
+	// 	border-bottom-color: $off-black !important;
+	// 	margin-top: 0;
+	// }
+
+	.made-using-block {
+
+		width: 100%;
+		text-align: center;
+
+		> div {
+
+			display: inline-block;
+			margin: 0 auto;
+			padding: 0 20px;
+
+			span[class^="icon-"], [class*=" icon-"] {
+				font-size: 55px;
+			}
+
+			i {
+				font-size: 60px;
+			}
+
+			p {
+				text-align: center;
+
+			}
+
+		}
+
+	}
+
+	// .portfolio-link-btn-container {
+
+	// 	display: flex;
+	// 	// height: 68%;
+
+	// 	a {
+	// 		margin-top: auto;
+	// 	}
+
+	// }
+}
+
+/* ABOUT PAGE */
+
+.about-page-content {
+	p {
+		font-size: 20px;
+
+		a {
+			color: #fff;
+			text-decoration: none;
+			border-bottom: solid 1px #fff;
+			transition: 0.3s;
+		}
+		a:hover {
+			color: $light-gray;
+			border-bottom-color: transparent;
+
+		}
+	}
+
+
+}
+
+/* FOOTER */
+
+#footer-background {
+	background-color: $off-black;
+	position: absolute;
+	height: 248px;
+	width: 100%;
+	z-index: -1;
+}
+
+#footer {
+	background-color: $off-black;
+	color: #fff;
+	z-index: 1;
+
+	a {
+		color: #fff;
+		text-decoration: none;
+		border-bottom: solid 1px #fff;
+		transition: 0.3s;
+	}
+
+	a:hover {
+		border-bottom-color: transparent;
+		color: $light-gray;
+	}
+}
+
+@media only screen and (max-width: 1399px) {
+
+
+	.content {
+
+		.project-card-container {
+
+			.project-card {
+				p {
+					// min-height: 72px;
+				}
+			}
+
+			.project-card#polyose {
+				background-position-x: -27%;
+			}
+
+
+			.project-card#morning {
+				background-position-x: -50%;
+			}
+			
+
+			.project-card#bantam {
+				
+				background-position-x: -55%;
+
+			}
+
+			.project-card#chiroptera {
+				
+				background-position-x: -39%;
+
+			}
+
+			.project-card#project-sunset-city {
+				background-position-x: -33%;
+			}
+
+			.project-card#ld-43 {
+				background-position-x: -43%;
+			}
+
+			.project-card#amalgama {
+				background-position-x: -41%;
+			}
+
+			.project-card#knight-life {
+				background-position-x: -35%;
+			}
+
+		}
+	}
+
+	.portfolio-page-body {
+		iframe {
+			
+			height: 291px;
+
+		}
+	}
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+
+	.content {
+
+		.project-card-container {
+
+			.project-card {
+				p {
+					// min-height: 72px;
+				}
+			}
+
+			.project-card#polyose {
+				background-position-x: -27%;
+			}
+
+
+			.project-card#morning {
+				background-position-x: -25%;
+			}
+			
+
+			.project-card#bantam {
+
+				background-position-x: -28%;
+
+			}
+
+			.project-card#chiroptera {
+
+				background-position-x: -17%;
+
+			}
+
+			.project-card#project-sunset-city {
+				background-position-x: -33%;
+			}
+
+			.project-card#ld-43 {
+				background-position-x: -19%;
+			}
+
+			.project-card#amalgama {
+				background-position-x: -35%;
+			}
+
+			.project-card#knight-life {
+				background-position-x: -35%;
+			}
+
+		}
+	}
+
+	.portfolio-page-body {
+		iframe {
+			
+			height: 241px;
+
+		}
+	}
+
+}
+
+@media only screen and (max-width: 991px) {
+
+	.content {
+
+		.project-card-container {
+
+			.project-card {
+				p {
+					min-height: 96px;
+				}
+			}
+			
+			.project-card#commonwealth-data-point {
+				background-position-x: -118%;
+			}
+
+			.project-card#polyose {
+				background-position-x: -27%;
+			}
+
+
+			.project-card#morning {
+				background-position-x: -175%;
+			}
+			
+
+			.project-card#bantam {
+
+				background-position-x: -229%;
+
+			}
+
+			.project-card#chiroptera {
+
+				background-position-x: -209%;
+
+			}
+
+			.project-card#arbeau {
+				background-position-x: -232%
+			}
+
+			.project-card#project-lexa {
+				background-position-x: -45%;
+			}
+
+			.project-card#project-sunset-city {
+				background-position-x: -221%;
+			}
+
+			.project-card#ld-43 {
+				background-position-x: -211%;
+			}
+
+			.project-card#amalgama {
+				background-position-x: -265%;
+			}
+
+			.project-card#knight-life {
+				background-position-x: -190%;
+			}
+
+		}
+	}
+
+	.portfolio-page-body {
+		iframe {
+			
+			height: 360px;
+
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	.content {
+
+
+		.project-card-container {
+
+
+
+			.project-card {
+
+				background-size: cover;
+				p {
+					min-height: 120px;
+				}
+
+
+			}
+
+			.project-card#commonwealth-data-point {
+				// background-position-x: 119%;
+			}
+
+			.project-card#polyose {
+				// background-position-x: 200%;
+			}
+
+
+			.project-card#morning {
+				// background-position-x: 175%;
+			}
+			
+
+			.project-card#bantam {
+
+				// background-position-x: 163%;
+
+			}
+
+			.project-card#chiroptera {
+
+				// background-position-x: 175%;
+
+			}
+
+			.project-card#arbeau {
+				// background-position-x: 143%;
+			}
+
+			.project-card#peak {
+				// background-position-x: 50%;
+			}
+
+			.project-card#project-lexa {
+				// background-position-x: 150%;
+			}
+
+			.project-card#project-sunset-city {
+				background-position-x: 100%;
+			}
+
+			.project-card#ld-43 {
+				// background-position-x: 231%;
+			}
+
+			.project-card#amalgama {
+				// background-position-x: 215%;
+			}
+
+			.project-card#knight-life {
+				// background-position-x: 192%;
+			}
+
+		}
+
+	}
+
+
+}
+
+@media only screen and (max-width: 767px) {
+
+
+	.content {
+
+
+		.project-card-container {
+
+
+
+			.project-card {
+
+				background-size: cover;
+				p {
+					min-height: 120px;
+				}
+
+
+			}
+
+			.project-card#commonwealth-data-point {
+				background-position-x: 119%;
+			}
+
+			.project-card#polyose {
+				background-position-x: 200%;
+			}
+
+
+			.project-card#morning {
+				background-position-x: 175%;
+			}
+			
+
+			.project-card#bantam {
+
+				background-position-x: 163%;
+
+			}
+
+			.project-card#chiroptera {
+
+				background-position-x: 175%;
+
+			}
+
+			.project-card#arbeau {
+				background-position-x: 143%;
+			}
+
+			.project-card#peak {
+				background-position-x: 50%;
+			}
+
+			.project-card#project-lexa {
+				background-position-x: 150%;
+			}
+
+			.project-card#project-sunset-city {
+				background-position-x: 395%;
+			}
+
+			.project-card#ld-43 {
+				background-position-x: 231%;
+			}
+
+			.project-card#amalgama {
+				background-position-x: 215%;
+			}
+
+			.project-card#knight-life {
+				background-position-x: 192%;
+			}
+
+		}
+
+	}
+
+	.portfolio-page-body {
+		iframe {
+			
+			height: 259px;
+
+		}
+	}
+
+}
+
+@media only screen and (max-width: 575px) {
+
+
+	.content {
+
+
+		.project-card-container {
+
+
+			.project-card::before {
+
+				background: linear-gradient(to bottom, rgba(233, 236, 239, 0) 200px, $light-gray 200px);
+
+			}
+
+			.project-card {
+				background-size: contain;
+				// background-position-y: -60px;
+
+				position: relative;
+				// background-size: 100% 40%;
+
+				> .row {
+					> div[class*=' col-']:first-child {
+						height: 200px;
+					}
+				}
+
+				p {
+					min-height: inherit;
+				}
+
+			}
+
+			.project-card#commonwealth-data-point {
+				background-position-x: 50%;
+				/* background-position-y: -100%; */
+				background-size: 481px;
+			}
+
+			.project-card#polyose {
+				background-position-x: -27%;
+			}
+
+
+			.project-card#morning {
+				background-position-x: 175%;
+			}
+			
+
+			.project-card#bantam {
+
+				background-position-y: 0;
+
+			}
+
+			.project-card#chiroptera {
+
+				background-position-y: -25%;
+
+			}
+
+			.project-card#arbeau {
+				background-position-x: 143%;
+			}
+
+			.project-card#peak {
+				background-position-y: -35%;
+			}
+
+			.project-card#amalgama {
+				background-position-y: -24%;
+			}
+
+		}
+
+	}
+
+	.portfolio-page-body {
+		iframe {
+			
+			height: 35%;
+
+		}
+	}
+
+}
+
+
+@media only screen and (max-width: 375px) {
+
+
+	.content {
+
+
+		.project-card-container {
+
+
+			.project-card::before {
+
+
+			}
+
+			.project-card {
+				
+
+				> .row {
+					> div[class*=' col-']:first-child {
+						
+					}
+				}
+
+				p {
+					
+				}
+
+			}
+
+			.project-card#ward-games-website {
+
+				background-position-x: 0;
+				background-size: 407px;
+
+			}
+
+			.project-card#commonwealth-data-point {
+
+			}
+
+			.project-card#polyose {
+				background-position-x: 0;
+    			background-size: 400px;
+			}
+
+
+			.project-card#morning {
+				
+			}
+			
+
+			.project-card#bantam {
+
+				background-position-x: 100%;
+    			background-size: 400px;
+
+			}
+
+			.project-card#chiroptera {
+
+				
+
+			}
+
+			.project-card#arbeau {
+				
+			}
+
+			.project-card#peak {
+				
+			}
+
+			.project-card#amalgama {
+				background-position-y: 0%;
+				background-position-x: 70%;
+				background-size: 365px;
+			}
+
+			.project-card#knight-life {
+				background-position-x: 0;
+				background-size: 366px;
+			}
+
+			.project-card#track-trek {
+				background-size: 397px;
+			}
+
+		}
+
+	}
+
+}

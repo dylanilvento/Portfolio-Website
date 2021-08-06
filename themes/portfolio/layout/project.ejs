@@ -1,0 +1,58 @@
+<% if (page.portfolio_background_image != null) { %>
+<div class="portfolio-page-background" style="background-image: url('/<%- page.path %><%- page.portfolio_background_image %>');"> </div>
+<% } else { %>
+<div class="portfolio-page-background" style="background-image: url('/<%- page.path %><%- page.thumbnail_image %>');"> </div>
+<% } %>
+<div class="portfolio-page-background-gradient" style="background: linear-gradient(to bottom, <%- page.background_rgb %>, 0) 25%, <%- page.background_rgb %>, 0.5) 40%, <%- page.background_rgb %>, 1) 50%);"></div>
+<div class="container-fluid">
+	<div class="container page-header portfolio-page-header my-4">
+		<div class="row">
+			<div class="col-xl-2"></div>
+			<div class="col-xl-4 col-lg-6">
+				<h1>
+					<%- page.title %>
+				</h1>
+			</div>
+			<div class="col-xl-4 col-lg-6">
+				<p>
+					<%- page.subtitle %>
+				</p>
+			</div>
+			<div class="col-xl-2"></div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-12 portfolio-page-body">
+			<div class="row">
+				<div class="col-12 mb-4">
+					<%- partial('_partial/badges/portfolio-page-badge-spawner') %>
+				</div>
+				<div class="col-lg-6 order-5 order-md-1">
+					<% if (page.youtube_link != null) { %>
+					<iframe src="<%- page.youtube_link %>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<% } else { %>
+					<img src="<%- page.screenshot_1 %>" />
+					<% } %>
+					<img src="<%- page.screenshot_2 %>" />
+					<img src="<%- page.screenshot_3 %>" />
+				</div>
+				<div class="col-lg-6 pt-0 pt-md-4 pt-lg-0 px-lg-5 order-1 order-md-5">
+					
+					<%- page.content %>
+					<h2 class="made-using-header my-4">Made Using</h2>
+					<div class="made-using-block">
+						<%- partial('_partial/made-using-blocks/made-using-spawner') %>
+					</div>
+					<!-- <div class="portfolio-link-btn-container flex-grow-1"> -->
+					<% if (page.secondary_button_link != null) { %>
+					<div class="my-4">
+						<a href="<%- page.secondary_button_link %>"class="btn btn-primary"><%- page.secondary_button_text %></a>
+					</div>
+					<% } %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
