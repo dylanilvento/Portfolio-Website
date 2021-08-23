@@ -5,9 +5,9 @@ subtitle: A 2D puzzle runner where you manipulate two alternate dimensions to gu
 date: 2016-07-02 09:57:32
 tags: [project, dev, design, games]
 thumbnail_image: peak-screenshot-background.png
-screenshot_1: peak-screenshot-1.png
-screenshot_2: peak-screenshot-2.png
-screenshot_3: peak-screenshot-3.png
+youtube_link: https://www.youtube.com/embed/AoKCzKE5UVE
+screenshot_2: peak-screenshot-1.png
+screenshot_3: peak-screenshot-2.png
 secondary_button_text: itch.io
 secondary_button_link: https://dylanilvento.itch.io/peak
 background_rgb: rgb(147,194,192
