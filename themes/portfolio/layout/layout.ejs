@@ -55,6 +55,15 @@
 				<div class="navbar-nav">
 					<a class="nav-link ps-3 ps-sm-0 px-lg-3" aria-current="page" href="<%- url_for('tags/project') %>">PROJECTS</a>
 					<a class="nav-link ps-3 ps-sm-0 px-lg-3" href="<%- url_for('tags/prototype') %>">PROTOTYPES</a>
+					<li class="nav-item dropdown">
+			        	<a class="nav-link dropdown-toggle ps-3 ps-sm-0 px-lg-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          		EXTRAS
+			        	</a>
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				        	<a class="dropdown-item" href="<%- url_for('tags/writing') %>">WRITING</a>
+				        	<!-- <a class="dropdown-item" href="#">PODCASTS</a> -->
+				        </div>
+			      	</li>
 					<a class="nav-link ps-3 ps-sm-0 px-lg-3" href="<%- url_for('about') %>">ABOUT</a>
 					<li class="nav-link ps-3 ps-sm-0 px-lg-3" href="#">
 						<a href="https://twitter.com/dylanilvento">
