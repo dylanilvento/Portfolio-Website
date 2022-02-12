@@ -20,14 +20,19 @@
 
 //IF YOU CHANGE THE NUMBER OF IMAGES YOU HAVE TO 
 //CHANGE THE TIME UNDER ANIMATION ABOVE TOO
+
+//BANTAM
 .crossfade > figure:nth-child(1) {
     background-image: url('../img/screenshots/bantam-screenshot-background.png');
+    top: -50px;
 }
+//PEAK
 .crossfade > figure:nth-child(2) {
     animation-delay: 6s;
     background-image: url('../img/screenshots/peak-screenshot-background.png');
-    // top: -150px;
+    top: -150px;
 }
+//TRACK TREK
 .crossfade > figure:nth-child(3) {
     animation-delay: 12s;
     background-image: url('../img/screenshots/track-trek-screenshot-background.png');

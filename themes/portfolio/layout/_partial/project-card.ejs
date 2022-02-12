@@ -6,12 +6,22 @@
 		<div class="row">
 			<div class="col-12 col-sm-4">
 				<div class="project-card-img-link">
-					<a href="<%- url_for(page.path) %>"></a>
+					<% if (page.primary_button_link != null) { %>
+						<a href="<%- url_for(page.primary_button_link) %>"></a>
+					<% } else { %>
+						<a href="<%- url_for(page.path) %>"></a>
+					<% }%>
 				</div>
 
 			</div>
 			<div class="col-12 col-sm-8">
-				<h2><a href="<%- url_for(page.path) %>"><%- page.title %></a></h2>
+				<h2>
+					<% if (page.primary_button_link != null) { %>
+						<a href="<%- url_for(page.primary_button_link) %>"><%- page.title %></a>
+					<% } else { %>
+						<a href="<%- url_for(page.path) %>"><%- page.title %></a>
+					<% }%>
+				</h2>
 				<%- partial('_partial/badges/badge-spawner') %>
 				<p class="">
 					<%- page.subtitle %>
@@ -24,8 +34,13 @@
 						<div class="col-lg-6">
 							<a href="<%- page.secondary_button_link %>"class="btn btn-primary"><%- page.secondary_button_text %></a>
 						</div>
+
+					<% } else if (page.primary_button_link != null) { %>
+						<div class="col-12">
+							<a href="<%- page.primary_button_link %>"class="btn btn-primary"><%- page.primary_button_text %></a>
+						</div>
 					<% } else { %>
-						<div class="col-12 mb-3 mb-lg-0">
+						<div class="col-12">
 							<a href="<%- url_for(page.path) %>" class="btn btn-primary">VIEW PROJECT</a>
 						</div>
 					<% } %>

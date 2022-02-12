@@ -12,9 +12,21 @@
 						<%- partial('_partial/project-card', {page: item}) %>
 						<% }) %>
 					</div>
-
 				</div>
-
+				<% if (page.prev || page.next) { %>
+				<div class="row pt-5">
+					<div class="col-6">
+						<% if (page.prev) { %>
+							<a href="<%- config.root %><%- page.prev_link %>"class="btn btn-primary">Previous</a>
+						<% } %>
+					</div>
+					<div class="col-6">
+						<% if (page.next) { %>
+							<a href="<%- config.root %><%- page.next_link %>"class="btn btn-primary">Next</a>
+						<% } %>
+					</div>
+				</div>
+				<% } %>
 			</div>
 			<div class="col-xl-2"></div>
 		</div>
