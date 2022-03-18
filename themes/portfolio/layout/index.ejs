@@ -36,17 +36,17 @@
 				<div class="row">
 					<div class="col-12">
 						<h1>
-							Recent Projects
+							Recent Game Projects
 						</h1>
 					</div>
-					<%site.tags.findOne({name: 'project'}).posts.sort('date', -1).limit(5).each(function(post) {%> <%- partial('_partial/project-card', {page: post}) %>
+					<%site.tags.findOne({name: 'games'}).posts.sort('date', -1).limit(5).each(function(post) {%> <%- partial('_partial/project-card', {page: post}) %>
 					<% })%>
 
 				</div>
 				<div class="row mt-5">
 					<div class="col-md-6"> </div>
 					<div class="col-md-6 pe-0">
-						<a href="<%- url_for('/tags/project') %>"class="btn btn-primary">See More Projects</a>
+						<a href="<%- url_for('/tags/games') %>"class="btn btn-primary">See More Games</a>
 					</div>
 				</div>
 			</div>
@@ -62,17 +62,17 @@
 				<div class="row">
 					<div class="col-12">
 						<h1>
-							Recent Prototypes
+							Recent Web Projects
 						</h1>
 					</div>
-					<%site.tags.findOne({name: 'prototype'}).posts.sort('date', -1).limit(5).each(function(post) {%> <%- partial('_partial/project-card', {page: post}) %>
+					<%site.tags.findOne({name: 'web'}).posts.sort('date', -1).limit(5).each(function(post) {%> <%- partial('_partial/project-card', {page: post}) %>
 					<% })%>
 
 				</div>
 				<div class="row mt-5">
 					<div class="col-md-6"> </div>
 					<div class="col-md-6 pe-0">
-						<a href="<%- url_for('/tags/prototype') %>"class="btn btn-primary">See More Prototypes</a>
+						<a href="<%- url_for('/tags/web') %>"class="btn btn-primary">See More Web Projects</a>
 					</div>
 				</div>
 			</div>

@@ -33,10 +33,12 @@
 					<% if (page.youtube_link != null) { %>
 					<iframe src="<%- page.youtube_link %>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<% } else { %>
-					<img src="<%- page.screenshot_1 %>" />
+					<img src="<%- url_for(page.path) %><%- page.screenshot_1 %>" />
 					<% } %>
-					<img src="<%- page.screenshot_2 %>" />
-					<img src="<%- page.screenshot_3 %>" />
+					<img src="<%- url_for(page.path) %><%- page.screenshot_2 %>" />
+					<% if (page.screenshot_3 != null) { %>
+					<img src="<%- url_for(page.path) %><%- page.screenshot_3 %>" />
+					<% } %>
 				</div>
 				<div class="col-lg-6 pt-0 pt-md-4 pt-lg-0 px-lg-5 order-1 order-md-5">
 					
