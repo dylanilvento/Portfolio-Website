@@ -13,7 +13,8 @@ secondary_button_link: https://thecoby.itch.io/stabilized
 background_rgb: rgb(121,171,231
 made_using: [unity]
 ---
-Made for [Ludum Dare 49](https://ldjam.com/events/ludum-dare/49/stabilized)'s theme of "Unstable," _Stabilized_ is a 2D action game where you try to catch items from the sky and return them to the barn to score points. The catch is
+
+Made for [Ludum Dare 49](https://ldjam.com/events/ludum-dare/49/stabilized)'s theme of "Unstable," _Stabilized_ is a 2D action game where you try to catch items from the sky and return them to the barn to score points. The twist is that you play the game as a rocking horse, which is constantly tossing the items around that you're trying to catch.
 
 I worked on this project alongside two other programmers, which allowed us to divide work more equitably and led to a stress-free game jam.
 

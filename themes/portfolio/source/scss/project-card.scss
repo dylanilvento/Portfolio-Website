@@ -343,3 +343,15 @@
 		background-size: 397px;
 	}
 }
+
+.project-card#stabilized {
+	background-position-x: -12%;
+
+	@media only screen and (max-width: 767px) {
+		background-position-x: 197%;
+	}
+
+	@media only screen and (max-width: 575px) {
+		background-position-y: -19%;
+	}
+}
