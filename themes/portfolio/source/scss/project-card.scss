@@ -14,16 +14,8 @@
 		background-position-x: -27%;
 	}
 
-	// @media only screen and (max-width: 1199px) {
-	// 	background-position-x: -27%;
-	// }
-
-	@media only screen and (max-width: 991px) {
-		background-position-x: -27%;
-	}
-
-	@media only screen and (max-width: 767px) {
-		background-position-x: 200%;
+	@media only screen and (max-width: 774px) {
+		background-position-x: 219%;
 	}
 
 	@media only screen and (max-width: 575px) {
@@ -121,7 +113,7 @@
 	}
 
 	@media only screen and (max-width: 767px) {
-		background-position-x: 150%;
+		background-position-x: 310%;
 	}
 }
 
@@ -137,7 +129,15 @@
 	}
 
 	@media only screen and (max-width: 991px) {
-		background-position-x: -160%;
+		background-position-x: -100%;
+	}
+
+	@media only screen and (max-width: 768px) {
+		background-position-x: 100%;
+	}
+
+	@media only screen and (max-width: 767px) {
+		background-position-x: 645%;
 	}
 }
 
@@ -165,10 +165,6 @@
 	background-position-x: -24.75%;
 
 	@media only screen and (max-width: 1399px) {
-		background-position-x: -35%;
-	}
-
-	@media only screen and (max-width: 1199px) {
 		background-position-x: -35%;
 	}
 
@@ -223,7 +219,6 @@
 }
 
 .project-card#best-games-played-2019-day-1-most-reverent {
-	// background-position-x: 5%;
 	background-size: cover;
 }
 
@@ -296,10 +291,6 @@
 	@media only screen and (max-width: 767px) {
 		background-position-x: 143%;
 	}
-
-	@media only screen and (max-width: 575px) {
-		background-position-x: 143%;
-	}
 }
 
 .project-card#best-games-played-2018-day-10-freshest-storytelling {
@@ -312,23 +303,13 @@
 	}
 }
 
-.project-card#project-sunset-city {
-	@media only screen and (max-width: 768px) {
-		background-position-x: 100%;
-	}
-
-	@media only screen and (max-width: 767px) {
-		background-position-x: 395%;
-	}
-}
-
 .project-card#peak {
 	@media only screen and (max-width: 767px) {
 		background-position-x: 50%;
 	}
 
 	@media only screen and (max-width: 575px) {
-		background-position-y: -35%;
+		background-position-y: -25%;
 	}
 }
 
