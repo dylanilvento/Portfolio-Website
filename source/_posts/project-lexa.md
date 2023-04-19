@@ -5,10 +5,10 @@ subtitle: A game prototype where you translate an alien language to solve puzzle
 date: 2020-08-22 12:00:00
 tags: [prototype, dev, design, games]
 thumbnail_image: project-lexa-screenshot-background.png
-screenshot_1: project-lexa-screenshot-1.png
+youtube_link: https://www.youtube.com/embed/ETjslaCuJhU
 screenshot_2: project-lexa-screenshot-2.png
 screenshot_3: project-lexa-screenshot-3.png
-background_rgb: rgb(197,122,131
+background_rgb: rgb(23,75,74
 made_using: [unity, illustrator]
 ---
 
