@@ -2,10 +2,10 @@
 title: Project Lexa
 layout: prototype
 subtitle: A game prototype where you translate an alien language to solve puzzles.
-date: 2020-08-22 12:00:00
+date: 2023-01-01 12:00:00
 tags: [prototype, dev, design, games]
 thumbnail_image: project-lexa-screenshot-background.png
-youtube_link: https://www.youtube.com/embed/ETjslaCuJhU
+youtube_link: https://www.youtube.com/embed/aV_zwlveVQU?si=yNrmZLhXLqDMzACb
 screenshot_2: project-lexa-screenshot-2.png
 screenshot_3: project-lexa-screenshot-3.png
 background_rgb: rgb(23,75,74
